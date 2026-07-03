@@ -3,31 +3,24 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import iconScroll from "@/app/assets/icon-scroll.svg";
+import { useCarousel } from "./useCarousel";
 
 const Carousel: React.FC<{
     items?: Array<React.ReactNode>;
 }> = ({ items = [] }) => {
-    const [current, setCurrent] = useState(0);
-
-    const prev = () => setCurrent((c) => (c === 0 ? items.length - 1 : c - 1));
-    const next = () => setCurrent((c) => (c === items.length - 1 ? 0 : c + 1));
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrent((c) => (c === items.length - 1 ? 0 : c + 1));
-        }, 8000);
-        return () => clearInterval(interval);
-    }, [items.length]);
-
-    if (!items.length) return null;
+    const { current, setCurrent, prev, next, handleTouchStart, handleTouchEnd } = useCarousel(items.length);
 
     return (
         <div className="flex flex-col items-center w-[95%]">
-            <div className="relative w-full flex items-center justify-center">
+            <div
+                className="relative w-full flex items-center justify-center"
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+            >
                 <button
                     onClick={prev}
                     aria-label="Previous"
-                    className="absolute left-2 z-10 flex items-center justify-center hover:opacity-80 transition-opacity"
+                    className="absolute left-2 z-10 hidden md:flex items-center justify-center hover:opacity-80 transition-opacity"
                 >
                     <Image className="h-[20px] rotate-90" src={iconScroll} alt="logo" />
                 </button>
@@ -48,7 +41,7 @@ const Carousel: React.FC<{
                 <button
                     onClick={next}
                     aria-label="Next"
-                    className="absolute right-2 z-10 flex items-center justify-center hover:opacity-80 transition-opacity"
+                    className="absolute right-2 z-10 hidden md:flex items-center justify-center hover:opacity-80 transition-opacity"
                 >
                     <Image className="h-[20px] -rotate-90" src={iconScroll} alt="logo" />
                 </button>
