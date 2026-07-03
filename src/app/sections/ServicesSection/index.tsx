@@ -12,7 +12,7 @@ export default function ServicesSection() {
         <Card key={index} title={item.title} list={item.list} onClick={() => window.open(`https://wa.me/?text=${encodeURIComponent(item.whatsappMessage)}`, "_blank")} />
       ))}
       </div>
-      <div className="hidden lg:flex">
+      <div className="hidden lg:flex w-full justify-center items-center">
         <Carousel
         items={[
           <Card key={0}  title={carouselData[0].title} list={carouselData[0].list} />,
