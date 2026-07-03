@@ -7,7 +7,10 @@ import MobileCarouselItem from "./components/MobileCarouselItem";
 export default function ServicesSection() {
   return (
     <>
-      <div className="flex flex-col lg:flex-row w-[95%] lg:w-[70%] gap-10 justify-center items-center my-10">
+      <div className="flex flex-col lg:flex-row w-[95%] lg:w-[70%] lg:gap-10 justify-center items-center my-10">
+        <div className="text-4xl font-semibold mb-4 bg-gradient-to-r from-web-green to-web-blue bg-clip-text text-transparent md:hidden flex">
+          Clique no seu plano
+          </div>
         {packages.map((item, index) => (
         <Card key={index} title={item.title} list={item.list} onClick={() => window.open(`https://wa.me/?text=${encodeURIComponent(item.whatsappMessage)}`, "_blank")} />
       ))}
