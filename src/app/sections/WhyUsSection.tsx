@@ -14,7 +14,7 @@ export default function HeroBanner() {
     },
     {
       title: "Suporte pós-entrega", 
-      text: "todos os projetos incluem um período mínimo de 3 meses de suporte, garantindo correções, orientações e acompanhamento para que seu site continue funcionando com excelência."
+      text: "todos os projetos incluem um período mínimo de 2 semanas de suporte, garantindo correções, orientações e acompanhamento para que seu site continue funcionando com excelência."
     }
   ]
   return (
