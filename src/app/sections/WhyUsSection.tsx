@@ -19,10 +19,10 @@ export default function HeroBanner() {
   ]
   return (
     <div className="flex flex-col w-[95%] lg:w-[70%] text-[#1B1B1B] my-24 gap-20 text-3xl font-semibold text-center justify-center text-light">
-        <a className="text-5xl mb-2">Por que trabalhar conosco e aumentar suas vendas online?</a>
+        <h2 className="text-5xl mb-2">Por que trabalhar conosco e aumentar suas vendas online?</h2>
         {data.map((item, index) => (
           <div key={index}>
-            <h2>{item.title}:</h2>
+            <h3>{item.title}:</h3>
             <p className="font-thin">{item.text}</p>
           </div>
         ))}
