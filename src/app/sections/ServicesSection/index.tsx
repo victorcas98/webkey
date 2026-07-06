@@ -12,7 +12,7 @@ export default function ServicesSection() {
           Clique no seu plano
           </div>
         {packages.map((item, index) => (
-        <Card key={index} title={item.title} list={item.list} onClick={()  => window.open(`https://wa.me/?text=${encodeURIComponent(item.whatsappMessage)}&phone=5531993966037`, "_blank")} />
+        <Card key={index} title={item.title} list={item.list} onClick={()  => window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(item.whatsappMessage)}&phone=5531993966037`)} />
       ))}
       </div>
       <div className="hidden lg:flex w-full justify-center items-center">
