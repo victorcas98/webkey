@@ -19,7 +19,7 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <section className="text-light bg-web-blue w-full py-4 mt-10">
+    <section className="text-light bg-dark bg-opacity-90 w-full py-4 px-2 mt-10">
       <h2 className="text-2xl font-bold text-center mb-4">Perguntas Frequentes</h2>
       <dl className="flex flex-col gap-2">
         {faqs.map((faq, index) => (

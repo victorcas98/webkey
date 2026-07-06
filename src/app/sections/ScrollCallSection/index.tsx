@@ -10,9 +10,9 @@ export default function ScrollCallSection() {
     const scrollRef = React.useRef<HTMLDivElement | null>(null);
 
     return (
-        <div>
+        < >
             <button
-                className="w-full bg-[#003D98] p-2 text-gray-200 text-xl flex flex-row items-center gap-2 justify-center"
+                className="w-full bg-web-blue p-2 text-gray-200 text-xl flex flex-row items-center gap-2 justify-center"
                 onClick={() => {
                     scrollRef.current?.scrollIntoView({
                         behavior: "smooth",
@@ -25,6 +25,6 @@ export default function ScrollCallSection() {
             <div ref={scrollRef} className="flex flex-col w-full my-10 items-center justify-center" >
                 <ServicesSection />
             </div>
-        </div>
+        </>
     )
 }
