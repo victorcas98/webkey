@@ -27,6 +27,7 @@ export default function Home() {
       <CtaButton variant="square">
         QUERO FAZER MEU ORÇAMENTO GRATUITO AGORA!
       </CtaButton>
+      <FaqSection />
     </main>
   );
 }
