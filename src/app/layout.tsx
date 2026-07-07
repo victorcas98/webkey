@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://webkeysites.com.br",
     siteName: "WebKey",
     title: "WebKey | Criação de Sites Profissionais em BH",
-    description: "Sites profissionais com SEO, design responsivo e suporte real. Atendimento presencial na Grande BH.",
+    description: "Sites profissionais otimizados para Google e IA, design responsivo e suporte real. Atendimento presencial na Grande BH.",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "WebKey - Criação de Sites" }]
   },
   twitter: {
