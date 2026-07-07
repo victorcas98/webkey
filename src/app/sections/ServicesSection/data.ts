@@ -29,7 +29,7 @@ export const packages = [
     {
         title: "Pacote Premium",
         list: [
-            "Paginas ilimitadas",
+            "Páginas ilimitadas",
             "Formulário para e-mail",
             "Depoimentos de clientes",
             "Novas páginas incluídas",
@@ -46,13 +46,13 @@ export const carouselData = [
         title: "Tenha seu Brand Site",
         list: [ "Profissionalize sua marca perante o mercado com um site por meio de Branding e reforço da sua identidade.",
               "90% dos consumidores escolhem uma marca somente depois de pesquisarem sobre ela no Google.(SEO Hedgehog Digital)",
-              "Personalize seus CTC(chamadas de engajamento) e crie leeds da maneira mais adequada para o seu perfil de cliente.",
+              "Personalize seus CTC(chamadas de engajamento) e crie leads da maneira mais adequada para o seu perfil de cliente.",
               "Melhor meio para conseguir o email de forma não invasiva. Email é quase 40x melhor na aquisição de clientes que Facebook e Twitter.(McKinsey & Company)",]
     }, {
         title: "Aprenda a usar WhatsApp Business",
-        list: [ "Otimize e personalize seu atendimento e de a melhor experiência para seus clientes",
-            "48% do consumidores elegeram o bate-papo ao vivo como WhastApp como o primeiro canal para solicitar assistência.(Capterra);",
-            "Na black friday de 2020 o grupo ViaVrejo (Casas Bahia, ponto frio, Extra) mais de 20% do faturamento deles (2bi) foi pelo whatsapp",
+        list: [ "Otimize e personalize seu atendimento e dê a melhor experiência para seus clientes",
+            "48% dos consumidores elegeram o bate-papo ao vivo como WhatsApp como o primeiro canal para solicitar assistência.(Capterra);",
+            "Na black friday de 2020 o grupo ViaVarejo (Casas Bahia, Ponto Frio, Extra) teve mais de 20% de seu faturamento (2bi) pelo WhatsApp",
             "Coloque mensagens automáticas de saudação, ausência, respostas rápidas.",]
     }, {
         title: "Sua empresa no Google",
