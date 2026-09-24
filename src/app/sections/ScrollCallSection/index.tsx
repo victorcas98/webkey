@@ -6,7 +6,6 @@ import ServicesSection from "./../ServicesSection";
 import Image from "next/image";
 
 export default function ScrollCallSection() {
-    const texto = "Olá! eu quero fazer um orçamento de website.";
     const scrollRef = React.useRef<HTMLDivElement | null>(null);
 
     return (

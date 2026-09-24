@@ -19,7 +19,9 @@ export default function Home() {
       </div>
       <Divider />
       <Image className=" my-2" src={image01} alt="Criação de sites profissionais em Belo Horizonte - WebKey" />
+      scs start
       <ScrollCallSection />
+      scs end
       <CtaButton variant="rounded">
         ENTRE EM CONTATO! FAÇA UM ORÇAMENTO GRATUITO!
       </CtaButton>
